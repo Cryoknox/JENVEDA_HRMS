@@ -23,7 +23,7 @@ public class BaseClass {
 		
 		try {
 			prop = new Properties();
-			FileInputStream ip = new FileInputStream("C:/Projects/Testing/Jenveda/src/main/java/com/MSME/"
+			FileInputStream ip = new FileInputStream("C:/Project/Testing/Jenveda/src/main/java/com/MSME/"
 					+ "/HRMS/Config/config.Properties"); 				
 			prop.load(ip);
 			//D:\Projects\Testing\Jenveda\src\main\java\com\MSME\HRMS\Config\config.Properties
@@ -37,12 +37,12 @@ public class BaseClass {
 	@SuppressWarnings("deprecation")
 	public static void initialization() {
 		String browsername = prop.getProperty("browser");
-		if(("edge").equals("chrome")) {
-			System.setProperty("webdriver.chrome.driver", "C:/Projects/chromedriver-win64/chromedriver.exe");
+		if(("chrome").equals("chrome")) {
+			System.setProperty("webdriver.chrome.driver", "C:/Project/chromedriver-win64/chromedriver-win64/chromedriver.exe");
 			driver = new ChromeDriver();
 		}
 		else if(browsername.equals("edge")) {
-			System.setProperty("webdriver.edge.driver", "C:/Projects/edgedriver_win64/Driver_Notes");
+			System.setProperty("webdriver.edge.driver", "C:/Project/edgedriver_win64/Driver_Notes");
 			driver = new EdgeDriver();
 		}
 		driver.manage().window().maximize();

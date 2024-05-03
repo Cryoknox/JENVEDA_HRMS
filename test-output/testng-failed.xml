@@ -3,16 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.MSME.HRMS.TestCases.HolidayPageTest">
+      <class name="com.MSME.HRMS.TestCases.LeaveEntitlementTest">
         <methods>
+          <include name="enableHoliday"/>
           <include name="tearDown"/>
           <include name="setUp"/>
           <include name="DisableHoliday"/>
-          <include name="enableHoliday"/>
-          <include name="EditHoliday"/>
-          <include name="AddHoliday_Selected_Emp"/>
         </methods>
-      </class> <!-- com.MSME.HRMS.TestCases.HolidayPageTest -->
+      </class> <!-- com.MSME.HRMS.TestCases.LeaveEntitlementTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
